@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BJJ Academy</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #333;
+            color: white;
+            padding: 10px 20px;
+        }
+        header img {
+            max-height: 100px;
+        }
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+        }
+        nav ul li {
+            margin-left: 20px;
+        }
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+            transition: color 0.3s ease;
+        }
+        nav ul li a:hover {
+            color: #ff9900;
+        }
+        
+        section {
+            margin-bottom: 30px;
+        }
+        .history {
+            position: relative;
+            background: url('632645b03121e.jpg') no-repeat center center/cover;
+            height: 800px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .history .content {
+            background: rgba(255, 255, 255, 0.8);
+            backdrop-filter: blur(10px);
+            padding: 20px;
+            border-radius: 8px;
+            max-width: 800px;
+            text-align: center;
+        }
+        .history h2 {
+            margin-bottom: 10px;
+        }
+        .history p {
+            line-height: 1.6;
+            color: #333;
+        }
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 10px;
+            margin: 20px auto;
+            max-width: 1000px;
+        }
+
+        .gallery img {
+            width: 180px;
+            height: 180px;
+            object-fit: cover;
+            border: 2px solid #ccc;
+            border-radius: 4px;
+            transition: transform 0.3s ease;
+        }
+
+        .gallery img:hover {
+            transform: scale(1.1);
+            border-color: #ff9900;
+        }
+        form {
+            max-width: 400px;
+            margin: 0 auto;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            background-color: #f9f9f9;
+        }
+        form label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: bold;
+        }
+        form input, form textarea, form button {
+            width: 100%;
+            margin-bottom: 15px;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        footer {
+            text-align: center;
+            padding: 10px;
+            background-color: #333;
+            color: white;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="LOGO-CARLSON-GRACIE-TEAM-2018.png" alt="BJJ Academy Logo">
+        <nav>
+            <ul>
+                <li><a href="#contact">Contacto</a></li>
+                <li><a href="#about">Sobre nosotros</a></li>
+                <li><a href="#membership">Suscripción</a></li>
+                <li><a href="#course">Cursos</a></li>
+                <li><a href="#certification">Certificación</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="history">
+            <div class="content">
+                <h2>Nuestra Historia</h2>
+                <p>
+                    Fundado en 1988, nuestro gimnasio es una piedra angular en la comunidad del Jiu-Jitsu Brasileño (BJJ). El visionario detrás de esta institución es el Maestro Carlos Gracie, un venerado cinturón negro y uno de los campeones más condecorados en la historia de este deporte. A lo largo de su ilustre carrera, el Maestro Carlos conquistó múltiples campeonatos mundiales, ganándose un lugar entre las leyendas de las artes marciales.
+                </p>
+                <p>
+                    Tras su retirada de la lucha competitiva, al Maestro Carlos le impulsó un único propósito: devolver a la comunidad lo mucho que le había dado. Estableció este gimnasio como un refugio para los entusiastas del BJJ de todas las edades y niveles de habilidad. Aquí pudo compartir su pasión, disciplina y las intrincadas técnicas de este bello arte con una nueva generación de practicantes.
+                </p>
+               
+            </div>
+        </section>
+        <section class="gallery" id="gallery">
+            <h2>Galeria</h2>
+            <img src="bjj-guards.jpg" alt="Training Session">
+            <img src="434290776_790725386414352_8421397320305879450_n-2-1024x731.jpg" alt="Championship">
+            <img src="carlson-1955-agencia-o-globo-645x710.jpg" alt="Master Gracie">
+            <img src="449084868_18447529036012331_1063194017348142011_n_480x480.webp" alt="Student Training">
+            <img src="idnuZYAOL8_1736873566630.jpeg" alt="Sparring Practice">
+        </section>
+        <section>
+            <form>
+                <h2>Contacto</h2>
+                <label for="name">Nombre</label>
+                <input type="text" id="name" name="name" required>
+                
+                <label for="email">Correo</label>
+                <input type="email" id="email" name="email" required>
+                
+                <label for="message">Mensaje</label>
+                <textarea id="message" name="message" rows="5" required></textarea>
+                
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2025 Academia BJJ. Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>
