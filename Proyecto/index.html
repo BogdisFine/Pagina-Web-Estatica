@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BJJ Academy</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #333;
+            color: white;
+            padding: 10px 20px;
+        }
+        header img {
+            max-height: 100px;
+        }
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+        }
+        nav ul li {
+            margin-left: 20px;
+        }
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+            transition: color 0.3s ease;
+        }
+        nav ul li a:hover {
+            color: #ff9900;
+        }
+        
+        section {
+            margin-bottom: 30px;
+        }
+        .history {
+            position: relative;
+            background: url('632645b03121e.jpg') no-repeat center center/cover;
+            height: 800px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .history .content {
+            background: rgba(255, 255, 255, 0.8);
+            backdrop-filter: blur(10px);
+            padding: 20px;
+            border-radius: 8px;
+            max-width: 800px;
+            text-align: center;
+        }
+        .history h2 {
+            margin-bottom: 10px;
+        }
+        .history p {
+            line-height: 1.6;
+            color: #333;
+        }
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 10px;
+            margin: 20px auto;
+            max-width: 1000px;
+        }
+
+        .gallery img {
+            width: 180px;
+            height: 180px;
+            object-fit: cover;
+            border: 2px solid #ccc;
+            border-radius: 4px;
+            transition: transform 0.3s ease;
+        }
+
+        .gallery img:hover {
+            transform: scale(1.1);
+            border-color: #ff9900;
+        }
+        form {
+            max-width: 400px;
+            margin: 0 auto;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            background-color: #f9f9f9;
+        }
+        form label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: bold;
+        }
+        form input, form textarea, form button {
+            width: 100%;
+            margin-bottom: 15px;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        footer {
+            text-align: center;
+            padding: 10px;
+            background-color: #333;
+            color: white;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="Diseño sin título (3).png" alt="BJJ Academy Logo">
+        <nav>
+            <ul>
+                <li><a href="#contact">Contacto</a></li>
+                <li><a href="#about">Sobre nosotros</a></li>
+                <li><a href="#galeria">Galeria</a></li>
+                
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="history">
+            <div class="content" id="about">
+                <h2>Sobre nosotros</h2>
+                <p>
+                    Esta página web está dedicada a reunir y organizar información sobre los principales eventos de Brazilian Jiu-Jitsu (BJJ) a nivel mundial. Aquí encontrarás datos actualizados sobre torneos como ADCC, IBJJF, CJI, European IBJJF, entre otros, incluyendo fechas, ubicaciones, categorías y resultados. Nuestro objetivo es facilitar el seguimiento del calendario competitivo del BJJ y ofrecer una herramienta útil tanto para atletas como para aficionados que buscan mantenerse informados y planificar su participación en los eventos más importantes del circuito.
+                </p>
+                
+               
+            </div>
+        </section>
+        <section class="gallery" id="galeria">
+            <h2>Galeria</h2>
+            <img src="World-IBJJF-white.png" alt="World-IBJJF">
+            <img src="IMG_E4868.jpg" alt="Pan-american">
+            <img src="i3ZVEVwAtbKHUCEaabnaky.jpg" alt="CJI">
+            <img src="ADCC-NEW_large_thumb_297x297.webp" alt="ADCC">
+            <img src="IBJJF-European-Championship-2024-Competitor-List.png" alt="Sparring Practice">
+        </section>
+        <section id="contact">
+            <form>
+                <h2>Contacto</h2>
+                <label for="name">Nombre</label>
+                <input type="text" id="name" name="name" required>
+                
+                <label for="email">Correo</label>
+                <input type="email" id="email" name="email" required>
+                
+                <label for="message">Mensaje</label>
+                <textarea id="message" name="message" rows="5" required></textarea>
+                
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2025 Academia BJJ. Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>
